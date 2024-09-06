@@ -1,0 +1,182 @@
+/* Media query for devices with a max width of 600px (phones) */
+@media (max-width: 600px) {
+
+    /* Make the header and navbar responsive */
+    
+
+    #navbar {
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        border: none;
+    }
+
+    #navbar header h1 {
+        font-size: 2rem;
+        padding: 0.5rem 0;
+    }
+
+    #navbar ul {
+        height: auto;
+        width: 100%;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #navbar ul li {
+        padding: 1rem;
+        text-align: center;
+        border: none;
+        font-size: 1.2rem;
+        height: auto;
+    }
+
+    #navbar ul a li {
+        font-size: 1.2rem;
+    }
+
+    /* Adjust main content for smaller screens */
+    #main-doc {
+        position: relative;
+        left: 0;
+        width: 100%;
+        max-width: 100%;
+        padding: 0;
+    }
+
+    /* Adjust section headers and paragraphs */
+    .main-section > header {
+        font-size: 1.5rem;
+        padding: 1rem;
+    }
+
+    .main-section {
+        padding: 1rem;
+    }
+
+    .main-section p {
+        font-size: 1.1rem;
+        padding: 0.5rem 0;
+    }
+
+    .main-section ul li {
+        font-size: 1rem;
+        padding: 0.5rem 0;
+    }
+
+    code {
+        font-size: 1.2rem;
+    }
+}
+
+
+* {
+    margin: 0;
+}
+:root{
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.5rem;
+
+}
+
+/* navbar */
+
+ .main-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-width: 280px;
+    max-width: 300px;
+    height: 100%;
+} 
+
+#navbar {
+    height: 100%;
+    border: 1px solid black;
+
+}
+
+#navbar>header {
+
+    font-size: 2.5rem;
+    font-style: italic;
+    padding: 2rem;
+    text-align: center;
+    font-weight: 500;
+    color: rgb(65, 65, 65)
+}
+
+#navbar>ul {
+    overflow-y: auto;
+    overflow-x: hidden;
+    height: 100%;
+    list-style: none;
+    padding-left: 0;
+
+}
+
+#navbar ul li {
+    padding: 1rem 2rem;
+    border-top: 2px solid rgb(152, 143, 143);
+    height: 6%;
+    text-decoration: none;
+}
+a{text-decoration: none;}
+
+#navbar ul  a  li{
+    font-style: italic;
+    text-decoration: none;
+    font-size: 150%;
+    text-decoration-color: rgb(49, 49, 49);
+    color: rgb(67, 66, 66);
+}
+
+/* navbar */
+
+/* main content styling*/
+#main-doc {
+
+    position: absolute;
+    left: 300px;
+    height: 100%;
+    max-width: fit-content;
+
+}
+
+.main-section>header{
+    font-size: 2rem;
+    padding: 1.5rem;
+    font-style: oblique;
+    color: rgb(67, 66, 66);
+   
+}
+
+.main-section {
+    padding: 1.4rem 1.4rem 2rem 1.4rem;
+    text-align: left;
+    border-top: 2px solid rgb(152, 143, 143);
+}
+
+.main-section p {
+    font-size: 1.3rem;
+    padding: .5rem 0;
+    font-weight: 350;
+}
+
+.main-section ul li {
+    font-size: 1.2rem;
+    padding: .7rem 0;
+    font-weight: 300;
+}
+code{
+    font-size: 1.1rem;
+    background-color: rgb(227, 222, 222);
+}
