@@ -2,19 +2,21 @@
 @media (max-width: 600px) {
 
     /* Make the header and navbar responsive */
-    
+    #main-doc{
+        font-size: .2rem;
+    }
 
     #navbar {
-        height: auto;
+        height: 100%;
         display: flex;
         flex-direction: column;
         align-items: center;
-        width: 100%;
+        width: 40%;
         border: none;
     }
 
-    #navbar header h1 {
-        font-size: 2rem;
+    #navbar header{
+        font-size: .1rem;
         padding: 0.5rem 0;
     }
 
@@ -24,52 +26,55 @@
         padding: 0;
         display: flex;
         flex-direction: column;
-        align-items: center;
     }
 
     #navbar ul li {
-        padding: 1rem;
-        text-align: center;
+        padding: .2rem;
+        text-align: left;
         border: none;
-        font-size: 1.2rem;
+        font-size: .2rem;
         height: auto;
+        margin-left: -30px;
     }
 
     #navbar ul a li {
-        font-size: 1.2rem;
+        font-size: .2rem;
     }
 
     /* Adjust main content for smaller screens */
     #main-doc {
         position: relative;
-        left: 0;
-        width: 100%;
-        max-width: 100%;
+        left:0;
+        width: 70%;
+        max-width: 50%;
         padding: 0;
+        margin-left: -197px
     }
 
     /* Adjust section headers and paragraphs */
     .main-section > header {
-        font-size: 1.5rem;
-        padding: 1rem;
+        font-size: .7rem;
+        padding: .2rem;
+        margin-left: -25px;
     }
 
     .main-section {
-        padding: 1rem;
+        padding: .2rem;
     }
 
     .main-section p {
-        font-size: 1.1rem;
-        padding: 0.5rem 0;
+        font-size: .6rem;
+        padding: 0.3rem 0;
     }
 
     .main-section ul li {
-        font-size: 1rem;
+        font-size: .3rem;
         padding: 0.5rem 0;
+        margin-left: -20px
     }
 
     code {
-        font-size: 1.2rem;
+        font-size: .4rem;
     }
 }
 
